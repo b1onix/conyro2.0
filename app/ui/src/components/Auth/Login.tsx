@@ -62,15 +62,15 @@ export const AuthLogin = () => {
         <div className="mx-auto w-full max-w-sm lg:w-96">
           <div>
             <div className="focus:outline-none focus-visible:ring-2 focus-visible:ring-pink-700 flex items-center">
-              <img className="h-8 w-auto" src="/logo.png" alt="Dialoqbase" />
-              <span className="text-lg font-bold dark:text-white">Dialoqbase</span>
+              <img className="h-8 w-auto" src="/logo.png" alt="ConyroAI" />
+              <span className="text-lg font-bold dark:text-white">ConyroAI</span>
               <span className="inline-block flex-shrink-0 rounded-full bg-green-100 px-2 py-0.5 text-xs font-medium text-green-800 ml-2">
                 {/* @ts-ignore */}
                 {`v${__APP_VERSION__}`}
               </span>
             </div>
             <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-white">
-              Login to your account
+              Prijavite se na vaš račun
             </h2>
           </div>
 
@@ -89,7 +89,7 @@ export const AuthLogin = () => {
                   rules={[
                     {
                       required: true,
-                      message: "Please input your username!",
+                      message: "Molimo unesite vaš username!",
                     },
                   ]}
                 >
@@ -105,7 +105,7 @@ export const AuthLogin = () => {
                   rules={[
                     {
                       required: true,
-                      message: "Please input your password!",
+                      message: "Molimo unesite vašu šifru!",
                     },
                   ]}
                 >
@@ -128,17 +128,17 @@ export const AuthLogin = () => {
             </div>
             {info?.isRegistrationAllowed ? (
               <p className="mt-10 text-center text-sm text-gray-500">
-                Don't have an account?{" "}
+                Nemate račun?{" "}
                 <Link
                   to="/register"
                   className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500"
                 >
-                  Register
+                  Registrujte se
                 </Link>
               </p>
             ) : (
               <p className="mt-10 text-center text-xs text-gray-500">
-                Registration is disabled by admin.
+                Registracija je isključena od strane Admina.
               </p>
             )}
           </div>
